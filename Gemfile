@@ -63,7 +63,7 @@ end
 
 group :development do
   gem 'rake',         '~> 0.8.7'
-  gem 'rspec',        '~> 1.3'
+  gem 'rspec',        '~> 1.3', :git => 'git://github.com/snusnu/rspec', :branch => 'heckle_fix_plus_gemfile'
   gem 'yard',         '~> 0.5'
   gem 'rcov',         '~> 0.9.7'
   gem 'jeweler',      '~> 1.4'
