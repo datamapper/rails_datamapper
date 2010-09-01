@@ -58,7 +58,7 @@ group :runtime do
   end
 
   gem 'rails',   '~> 2.3.5'
-  gem 'dm-core', '~> 1.0', :git => 'git://github.com/datamapper/dm-core.git'
+  gem 'dm-core', '~> 1.0.0', :git => 'git://github.com/datamapper/dm-core.git'
 end
 
 group :development do
@@ -67,10 +67,10 @@ group :development do
   gem 'yard',         '~> 0.5'
   gem 'rcov',         '~> 0.9.7'
   gem 'jeweler',      '~> 1.4'
-  gem 'data_objects', '~> 0.10.1'
-  gem 'do_sqlite3',   '~> 0.10.1'
-  gem 'do_mysql',     '~> 0.10.1'
-  gem 'do_postgres',  '~> 0.10.1'
+  gem 'data_objects', '~> 0.10.2'
+  gem 'do_sqlite3',   '~> 0.10.2'
+  gem 'do_mysql',     '~> 0.10.2'
+  gem 'do_postgres',  '~> 0.10.2'
 end
 
 group :quality do
