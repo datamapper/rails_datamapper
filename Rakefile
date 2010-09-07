@@ -12,6 +12,7 @@ begin
     gem.email       = 'tomjmalone [a] gmail [d] com'
     gem.homepage    = 'http://github.com/datamapper/dm-more/tree/master/%s' % gem.name
     gem.authors     = [ 'Tom Malone' ]
+    gem.has_rdoc    = 'yard'
 
     gem.rubyforge_project = 'datamapper'
 
