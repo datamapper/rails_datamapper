@@ -29,7 +29,7 @@ group :development do
 end
 
 group :quality do
-  gem 'rcov',         '~> 0.9.7'
+  gem 'rcov',         '~> 0.9.7', :platforms => :mri_18
   gem 'yard',         '~> 0.5'
   gem 'yardstick',    '~> 0.1'
 end
