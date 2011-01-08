@@ -17,13 +17,15 @@ module Rails
 
     private
 
-      def config_file
-        config_file_abs_path = File.expand_path('config/database.yml', Rails.root)
-        File.new(config_file_abs_path)
+      def config_file_content
+        config_file_path = Rails.root.join('config/database.yml')
+        File.open(config_file_path) do |f|
+          f.read
+        end
       end
 
       def full_config
-        YAML::load(ERB.new(config_file.read).result)
+        YAML::load(ERB.new(config_file_content).result)
       end
 
       memoize :full_config
