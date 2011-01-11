@@ -18,11 +18,11 @@ module Rails
     private
 
       def config_file
-        File.expand_path('config/database.yml', Rails.root)
+        Rails.root.join('config/database.yml')
       end
 
       def full_config
-        YAML::load(ERB.new(File.read(config_file)).result)
+        YAML::load(ERB.new(config_file.read).result)
       end
 
       memoize :full_config
