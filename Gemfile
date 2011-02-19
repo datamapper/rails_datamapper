@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 SOURCE       = ENV['SOURCE']   ? ENV['SOURCE'].to_sym              : :git
 REPO_POSTFIX = SOURCE == :path ? ''                                : '.git'
 DATAMAPPER   = SOURCE == :path ? Pathname(__FILE__).dirname.parent : 'http://github.com/datamapper'
-DM_VERSION   = '~> 1.0.2'
+DM_VERSION   = '~> 1.0.3'
 DO_VERSION   = '~> 0.10.2'
 
 group :runtime do # Runtime dependencies (as in the gemspec)
@@ -21,7 +21,7 @@ end
 group :development do
   gem 'rake',         '~> 0.8.7'
   gem 'rspec',        '~> 1.3.1'
-  gem 'jeweler',      '~> 1.4.0'
+  gem 'jeweler',      '~> 1.5.2'
   gem 'data_objects', DO_VERSION
   gem 'do_sqlite3',   DO_VERSION
   gem 'do_mysql',     DO_VERSION
