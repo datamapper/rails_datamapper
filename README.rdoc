@@ -1,4 +1,4 @@
-This is a Rails plugin that provides datamapper as an orm
+This is a legacy gem, that provides rails 2.x support for DataMapper.  Those looking to use DataMapper with Rails3 should use dm-rails which can be found at http://github.com/datamapper/dm-rails
 
 == Setup
 
