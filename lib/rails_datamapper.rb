@@ -1,5 +1,4 @@
 require 'pathname'
-require 'extlib/pathname'
 
 require 'rails_datamapper/session_store'
 
