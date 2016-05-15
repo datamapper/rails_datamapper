@@ -27,6 +27,18 @@ To avoid any dependency on active record add this to your projects environment.r
 
 config.frameworks -= [ :active_record ]
 
+== Migrations
+
+After generating datamapper rake tasks
+
+  script/generate dm_install
+
+following migrations become available:
+
+  dm:automigrate
+  dm:autoupgrade
+  dm:migrate
+
 == Session Store
 
 Change config/initializers/session_store.rb to something like the following:
